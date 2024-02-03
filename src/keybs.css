@@ -1,0 +1,46 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  width: 200px; 
+  height: 375px; 
+  margin: 3px;
+  text-align: center;
+  border: 1px solid #AAAA;
+  padding: 20px; 
+  background-color: black; 
+  color: white; 
+  word-wrap: break-word; 
+  overflow: hidden; 
+  transition: border-color 0.3s; 
+}
+
+
+.grid-item:hover {
+  border-color: red;
+}
+
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.keyb-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 0; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid-item {
+    width: 100%; 
+    max-width: none; 
+  }
+}
+
